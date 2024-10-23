@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: gainsboro;
+    padding: 20px;
+
+}
+
+nav {
+    background-color: black(218, 218, 226);
+    display: grid;
+    place-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #dfdbdb;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+    border-radius: 15px;
+
+}
+
+nav ul a:hover {
+    background-color: rgb(157, 167, 182);
+    color: white;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+
+
+
+
+/* .item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+} */
+
+.item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+.item img {
+    width: 100%;
+    border-radius: 15px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.item img :hover {
+    transform: scale(5s);
+}
+
+.item h4 {
+    padding: 5px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.item button {
+    padding: 5px 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(146, 146, 62);
+    color: white;
+    cursor: pointer;
+
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.1s all;
+    border-radius: 20px;
+}
+
+.item button:hover {
+    transform: scale(1.00);
+}
+
+@media screen and (max-width:1000px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.burgers img {
+    height: 100%;
+}
